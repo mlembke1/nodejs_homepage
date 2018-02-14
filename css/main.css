@@ -74,6 +74,14 @@ main #meltdown-container h2 {
   padding: 5px;
   color:#0D6C0E;
   margin-bottom: 2rem;
+  transition: .25s;
+}
+
+main #meltdown-container h2:hover {
+  background-color: #0D6C0E;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 main div.box-row {
@@ -179,9 +187,16 @@ footer ul.issue-link li {
   border-left: 1px solid lightgrey;
   padding: 0 .5rem;
   font-size: .75rem;
+  transition: .25s;
 }
 
-footer p#top {
+footer ul.issue-link li:hover {
+  border-bottom: 1px solid lightgrey;
+  color: white;
+  cursor: pointer;
+}
+
+footer span#top {
   font-size: .75em;
   color: lightgrey;
   position: relative;
@@ -192,4 +207,5 @@ footer p {
   font-size: .75em;
   color: lightgrey;
   margin: 0;
+  line-height: 1.5rem;
 }
