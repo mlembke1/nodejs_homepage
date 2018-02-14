@@ -7,6 +7,10 @@ html {
   margin: -10px;
 }
 
+body{
+  margin: 0;
+}
+
 /************* HEADER/NAV *************/
 header {
   background-color: #333333;
@@ -25,10 +29,14 @@ nav ul li{
   color: lightgrey;
   padding: 0 .7rem .1rem .7rem;
   border-left: 1px solid white;
+  transition: .25s;
 }
 
 nav ul li:hover {
   background-color: #0D6C0E;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 #border-left-none {
@@ -43,9 +51,10 @@ nav ul li:hover {
 main{
   max-width: 700px;
   margin: auto;
+  height: 530px;
 }
 
-main h3{
+main #first-para {
   font-weight: 100;
   padding-top: 1.75rem;
   text-align: center;
@@ -53,6 +62,7 @@ main h3{
 
 main h2 {
   text-align: center;
+  margin: 0;
 }
 
 main #meltdown-container {
@@ -75,12 +85,16 @@ main div.lts-current {
   background-color: #0D6C0E;
   color: white;
   text-align: center;
-  /* padding: .5rem; */
   margin: 1rem;
   width: 242px;
   height: 81px;
-  /* line-height: 8px; */
   font-size: .75rem;
+  transition: .25s;
+}
+
+main div.lts-current:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 main div.lts-current h1{
@@ -99,6 +113,7 @@ div.links-row ul li {
   display: inline;
   border-left: 1px solid black;
   padding: 0 .25rem;
+  color: #0D6C0E;
 }
 
 div.links-row ul li:hover {
@@ -119,4 +134,62 @@ div.links-row ul li:hover {
   position: relative;
   bottom: 15px;
   right: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 span.make-it-green {
+  color: #0D6C0E;
+  transition: .2s;
+}
+
+h3 span.make-it-green:hover {
+  background-color: #0D6C0E;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+/************* FOOTER *************/
+footer div.footer-container {
+  max-width: 980px;
+  margin: auto;
+}
+
+footer {
+  height: 196px;
+  width: 100%;
+  margin: 0;
+  background-color: #333333;
+}
+
+footer ul.issue-link{
+  text-align: right;
+  /* margin: 2rem; */
+  padding-top: 1rem;
+}
+
+footer ul.issue-link li {
+  display: inline;
+  color: lightgrey;
+  border-left: 1px solid lightgrey;
+  padding: 0 .5rem;
+  font-size: .75rem;
+}
+
+footer p#top {
+  font-size: .75em;
+  color: lightgrey;
+  position: relative;
+  bottom: 32px;
+}
+
+footer p {
+  font-size: .75em;
+  color: lightgrey;
+  margin: 0;
 }
