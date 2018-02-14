@@ -209,3 +209,29 @@ footer p {
   margin: 0;
   line-height: 1.5rem;
 }
+
+
+
+/************* MEDIA QUERIES *************/
+@media (max-width: 1024px) {
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li{
+    display: block;
+    color: lightgrey;
+    padding: 0 .7rem .1rem .7rem;
+    /* border-left: 1px solid white; */
+    transition: .25s;
+  }
+
+  header {
+    background-color: #333333;
+    height: 300px;
+    text-align: center;
+    margin: 0;
+  }
+
+}
