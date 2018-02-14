@@ -1,0 +1,46 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+/************* HEADER/NAV *************/
+header {
+  background-color: #333333;
+  height: 140px;
+  text-align: center;
+}
+
+.fa-6x {
+  color: #0D6C0E;
+}
+
+nav ul li{
+  display: inline;
+  color: lightgrey;
+  padding: 0 .7rem;
+  border-left: 1px solid white;
+}
+
+nav ul li:hover {
+  background-color: #0D6C0E;
+}
+
+#border-left-none {
+  border-left: none;
+}
+
+
+/************* MAIN *************/
+main{
+  max-width: 700px;
+  margin: auto;
+}
+
+main h3{
+  font-weight: 100;
+  padding-top: 3rem;
+  text-align: center;
+}
